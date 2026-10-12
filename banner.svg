@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-labelledby="title">
+  <title id="title">XxSeRyIxX: achievement hunter and developer</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#07070c"/>
+      <stop offset=".6" stop-color="#1d0d2e"/>
+      <stop offset="1" stop-color="#3a0c3f"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a0b33"/>
+      <stop offset="1" stop-color="#07070c"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe27a"/>
+      <stop offset=".55" stop-color="#f13292"/>
+      <stop offset="1" stop-color="#9501a9"/>
+    </linearGradient>
+    <linearGradient id="chrome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".52" stop-color="#ffd1ea"/>
+      <stop offset=".52" stop-color="#f13292"/>
+      <stop offset="1" stop-color="#ffc2e3"/>
+    </linearGradient>
+    <mask id="stripes" maskUnits="userSpaceOnUse" x="0" y="0" width="1280" height="212">
+      <rect width="1280" height="212" fill="#fff"/>
+      <g fill="#000">
+        <rect y="146" width="1280" height="3"/>
+        <rect y="160" width="1280" height="5"/>
+        <rect y="174" width="1280" height="7"/>
+        <rect y="188" width="1280" height="9"/>
+        <rect y="202" width="1280" height="10"/>
+      </g>
+    </mask>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="18"/></filter>
+    <filter id="halo" x="-20%" y="-60%" width="140%" height="220%"><feGaussianBlur stdDeviation="9"/></filter>
+    <filter id="neon" x="-10%" y="-200%" width="120%" height="500%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <style>
+    text { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; }
+    .name { font-size: 112px; font-weight: 800; font-style: italic; letter-spacing: 2px; }
+    .tag { font-size: 22px; font-weight: 600; letter-spacing: 9px; }
+    .flicker { animation: flicker 6s linear infinite; }
+    .star { animation: twinkle 3s ease-in-out infinite alternate; }
+    .h { animation: move 3.5s cubic-bezier(.55, .085, .68, .53) infinite, fade 3.5s linear infinite; }
+    @keyframes flicker { 0%, 46%, 50%, 53%, 100% { opacity: .9; } 48%, 52% { opacity: .35; } }
+    @keyframes twinkle { from { opacity: .2; } to { opacity: 1; } }
+    @keyframes move { from { transform: translateY(0); } to { transform: translateY(108px); } }
+    @keyframes fade { from { opacity: 0; } 20%, to { opacity: .8; } }
+    @media (prefers-reduced-motion: reduce) {
+      .flicker, .star { animation: none; }
+      .h { animation: none; opacity: .8; transform: translateY(var(--rest)); }
+    }
+  </style>
+
+  <rect width="1280" height="212" fill="url(#sky)"/>
+  <g fill="#fff">
+    <circle class="star" cx="48" cy="36" r="1.2"/>
+    <circle class="star" cx="112" cy="148" r="1" style="animation-delay:-.6s"/>
+    <circle class="star" cx="176" cy="70" r="1.5" style="animation-delay:-1.3s"/>
+    <circle class="star" cx="236" cy="22" r="1" style="animation-delay:-2.1s"/>
+    <circle class="star" cx="268" cy="118" r="1.2" style="animation-delay:-.9s"/>
+    <circle class="star" cx="30" cy="190" r="1" style="animation-delay:-2.6s"/>
+    <circle class="star" cx="300" cy="60" r="1" style="animation-delay:-1.7s"/>
+    <circle class="star" cx="420" cy="18" r="1.3" style="animation-delay:-.3s"/>
+    <circle class="star" cx="560" cy="40" r="1" style="animation-delay:-2.3s"/>
+    <circle class="star" cx="700" cy="14" r="1.2" style="animation-delay:-1.1s"/>
+    <circle class="star" cx="860" cy="34" r="1" style="animation-delay:-2.8s"/>
+    <circle class="star" cx="1004" cy="72" r="1.4" style="animation-delay:-.5s"/>
+    <circle class="star" cx="1060" cy="20" r="1" style="animation-delay:-1.9s"/>
+    <circle class="star" cx="1120" cy="130" r="1.2" style="animation-delay:-2.4s"/>
+    <circle class="star" cx="1180" cy="56" r="1" style="animation-delay:-.8s"/>
+    <circle class="star" cx="1240" cy="160" r="1.3" style="animation-delay:-1.5s"/>
+    <circle class="star" cx="1010" cy="180" r="1" style="animation-delay:-2.2s"/>
+    <circle class="star" cx="1220" cy="24" r="1.1" style="animation-delay:-1.2s"/>
+  </g>
+  <circle cx="640" cy="212" r="150" fill="#f13292" opacity=".55" filter="url(#soft)"/>
+  <circle cx="640" cy="212" r="150" fill="url(#sun)" mask="url(#stripes)"/>
+
+  <rect y="212" width="1280" height="108" fill="url(#floor)"/>
+  <g stroke="#f13292" stroke-width="1.5" stroke-opacity=".8" filter="url(#neon)">
+    <line x1="460" y1="212" x2="-710" y2="320"/>
+    <line x1="480" y1="212" x2="-560" y2="320"/>
+    <line x1="500" y1="212" x2="-410" y2="320"/>
+    <line x1="520" y1="212" x2="-260" y2="320"/>
+    <line x1="540" y1="212" x2="-110" y2="320"/>
+    <line x1="560" y1="212" x2="40" y2="320"/>
+    <line x1="580" y1="212" x2="190" y2="320"/>
+    <line x1="600" y1="212" x2="340" y2="320"/>
+    <line x1="620" y1="212" x2="490" y2="320"/>
+    <line x1="640" y1="212" x2="640" y2="320"/>
+    <line x1="660" y1="212" x2="790" y2="320"/>
+    <line x1="680" y1="212" x2="940" y2="320"/>
+    <line x1="700" y1="212" x2="1090" y2="320"/>
+    <line x1="720" y1="212" x2="1240" y2="320"/>
+    <line x1="740" y1="212" x2="1390" y2="320"/>
+    <line x1="760" y1="212" x2="1540" y2="320"/>
+    <line x1="780" y1="212" x2="1690" y2="320"/>
+    <line x1="800" y1="212" x2="1840" y2="320"/>
+    <line x1="820" y1="212" x2="1990" y2="320"/>
+    <line class="h" x1="0" y1="212" x2="1280" y2="212" style="--rest:.55px;animation-delay:-.25s"/>
+    <line class="h" x1="0" y1="212" x2="1280" y2="212" style="--rest:4.96px;animation-delay:-.75s"/>
+    <line class="h" x1="0" y1="212" x2="1280" y2="212" style="--rest:13.8px;animation-delay:-1.25s"/>
+    <line class="h" x1="0" y1="212" x2="1280" y2="212" style="--rest:27px;animation-delay:-1.75s"/>
+    <line class="h" x1="0" y1="212" x2="1280" y2="212" style="--rest:44.6px;animation-delay:-2.25s"/>
+    <line class="h" x1="0" y1="212" x2="1280" y2="212" style="--rest:66.7px;animation-delay:-2.75s"/>
+    <line class="h" x1="0" y1="212" x2="1280" y2="212" style="--rest:93.2px;animation-delay:-3.25s"/>
+  </g>
+  <line x1="0" y1="212" x2="1280" y2="212" stroke="#ff7ac1" stroke-width="2" filter="url(#neon)"/>
+
+  <text class="name flicker" x="640" y="150" text-anchor="middle" fill="#f13292" filter="url(#halo)">XxSeRyIxX</text>
+  <text class="name" x="640" y="150" text-anchor="middle" fill="url(#chrome)" stroke="#07070c" stroke-width="7" stroke-linejoin="round" paint-order="stroke">XxSeRyIxX</text>
+  <text class="tag" x="640" y="290" text-anchor="middle" fill="#3ad1ff" stroke="#07070c" stroke-width="6" stroke-linejoin="round" paint-order="stroke">ACHIEVEMENT HUNTER · DEVELOPER</text>
+</svg>
