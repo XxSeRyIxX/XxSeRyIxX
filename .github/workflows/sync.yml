@@ -1,0 +1,28 @@
+name: Sync with website
+
+on:
+  schedule:
+    # Daily, so website changes show up within a day; the website itself rebuilds Mondays at 00:00.
+    - cron: '17 1 * * *'
+      timezone: Europe/Madrid
+  push:
+    branches: [main]
+    paths: [README.md, scripts/sync-readme.mjs, .github/workflows/sync.yml]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-slim
+    steps:
+      - uses: actions/checkout@v7
+      - run: node scripts/sync-readme.mjs
+      - name: Commit the README if it changed
+        run: |
+          git diff --quiet && exit 0
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -am 'Sync featured projects with the website'
+          git push
