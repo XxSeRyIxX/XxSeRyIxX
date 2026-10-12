@@ -5,11 +5,9 @@ something I use is missing, I build it: tools for games, for my inbox and for Ko
 
 <a href="https://xxseryixx.github.io/"><img src="https://xxseryixx.github.io/card.svg" width="100%" alt="My Steam level, badges, games, achievements and completed games, updated every week"></a>
 
-## Featured projects
+## Things I made
 
 <!-- projects:start -->
-- **[Godot-4-2D-Destructible-Objects](<https://github.com/XxSeRyIxX/Godot-4-2D-Destructible-Objects>)**: A script that takes a sprite, divides it into blocks and makes them explode 💥!
-- **[Godot-4-2D-Fake-Explosion-Particles](<https://github.com/XxSeRyIxX/Godot-4-2D-Fake-Explosion-Particles>)**: A script to simulate exploding particles.
 - **[IMMORTALITY-Clip-Tracker](<https://github.com/XxSeRyIxX/IMMORTALITY-Clip-Tracker>)**: Reads your IMMORTALITY save, or the clips you mark by hand on a console, and tells you exactly which clips you are still missing, and how to reach each one. In your browser or as an app for Windows, macOS and Linux. [Open it](<https://vseryi.github.io/IMMORTALITY-Clip-Tracker/>)
 - **[mail-cleaner](<https://github.com/XxSeRyIxX/mail-cleaner>)**: Find the senders that flood your inbox, unsubscribe and delete everything they sent. Outlook and Gmail in your browser, plus IMAP in the desktop app for Windows, macOS and Linux. Your mail never passes through a server of ours.
 - **[plugin.video.stremio2kodi](<https://github.com/XxSeRyIxX/plugin.video.stremio2kodi>)**: Stremio add-ons wrapper for Kodi.

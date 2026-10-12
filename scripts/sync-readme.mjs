@@ -1,4 +1,4 @@
-// Rewrites the Featured projects section of README.md from the website's profile.json, so both list the same repos.
+// Rewrites the Things I made list in README.md from the website's profile.json, leaving out pinned repos: GitHub shows those below the README.
 import { readFile, writeFile } from 'node:fs/promises';
 
 const SOURCE = 'https://xxseryixx.github.io/profile.json';
@@ -24,7 +24,7 @@ if (!response.ok) throw new Error(`${SOURCE} answered HTTP ${response.status}`);
 const { github } = await response.json();
 
 const items = github.projects
-  .filter((project) => httpUrl(project.url))
+  .filter((project) => !project.pinned && httpUrl(project.url))
   .map((project) => {
     const description = project.description?.trim();
     const homepage = httpUrl(project.homepage);
