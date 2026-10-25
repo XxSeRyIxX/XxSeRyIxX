@@ -8,6 +8,7 @@ something I use is missing, I build it: tools for games, for my inbox and for Ko
 ## Things I made
 
 <!-- projects:start -->
+- **[aomr-tracker](<https://github.com/XxSeRyIxX/aomr-tracker>)**: Every achievement and badge of Age of Mythology: Retold, with your progress: counters, the gods you still need, streaks and rarity. Reads the game's files, Steam or your public Xbox/PlayStation profile. Website and desktop app (Windows, macOS, Linux, Steam Deck), in English and Spanish. [Open it](<https://xxseryixx.github.io/aomr-tracker/>)
 - **[IMMORTALITY-Clip-Tracker](<https://github.com/XxSeRyIxX/IMMORTALITY-Clip-Tracker>)**: Reads your IMMORTALITY save, or the clips you mark by hand on a console, and tells you exactly which clips you are still missing, and how to reach each one. In your browser or as an app for Windows, macOS and Linux. [Open it](<https://xxseryixx.github.io/IMMORTALITY-Clip-Tracker/>)
 - **[mail-cleaner](<https://github.com/XxSeRyIxX/mail-cleaner>)**: Find the senders that flood your inbox, unsubscribe and delete everything they sent. Outlook and Gmail in your browser, plus IMAP in the desktop app for Windows, macOS and Linux. Your mail never passes through a server of ours. [Open it](<https://xxseryixx.github.io/mail-cleaner/>)
 - **[plugin.video.stremio2kodi](<https://github.com/XxSeRyIxX/plugin.video.stremio2kodi>)**: Stremio add-ons wrapper for Kodi.
